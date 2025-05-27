@@ -1,0 +1,81 @@
+***Inventory and Sales Tracking System for a Retail Store***
+This project implements a backend system for managing inventory and tracking sales in a retail store, accessible via a command-line interface (CLI).
+
+
+Step 1: Define Your Menu Structure
+Decide the main actions your program should provide.
+For example:
+
+Manage Products
+Manage Customers
+Process Sales
+Generate Bills
+Export/Import CSV
+Exit
+Step 2: Write a Loop for the Main Menu
+Use a loop (usually while True: in Python) to continuously display the menu until the user chooses to exit.
+
+Example:
+
+Python
+while True:
+    print("1. Manage Products")
+    print("2. Manage Customers")
+    print("3. Exit")
+    choice = input("Enter your choice: ")
+    # Handle the choice here
+Step 3: Parse and Handle User Input
+After capturing the choice, use conditional statements (if/elif/else) to call different functions or sub-menus.
+
+Example:
+
+Python
+if choice == "1":
+    product_menu()
+elif choice == "2":
+    customer_menu()
+elif choice == "3":
+    print("Exiting...")
+    break
+else:
+    print("Invalid choice. Please try again.")
+Step 4: Implement Sub-Menus (If Needed)
+Each sub-menu can have its own loop for navigation.
+For example, inside product_menu():
+
+Python
+def product_menu():
+    while True:
+        print("1. Add Product")
+        print("2. View Products")
+        print("3. Back to Main Menu")
+        sub_choice = input("Enter your choice: ")
+        if sub_choice == "1":
+            add_product()
+        elif sub_choice == "2":
+            view_products()
+        elif sub_choice == "3":
+            break
+        else:
+            print("Invalid choice.")
+Step 5: Implement the Action Functions
+Write the actual functions like add_product(), view_products(), etc., which perform the logic for each option.
+
+Step 6: Start the Program with the Main Menu
+Make sure your main menu loop runs when the script is executed.
+
+Python
+if __name__ == "__main__":
+    main_menu()
+Step 7: Test Navigation
+Run your program and try different paths through the menu to be sure navigation works as expected.
+
+Summary:
+
+Plan and list menu options
+Use a loop to display the menu and get user input
+Use conditionals to handle choices
+Use sub-menus for complex branches
+Implement the logic for each action
+Make sure the main menu runs at script start
+Test thoroughly

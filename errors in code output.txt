@@ -1,0 +1,246 @@
+*******IN PRODUCT-->1.ADD******
+********PRODUCT NAME ACCEPTING NUMBERS AND GOT SUCCESS*********
+Product Management
+1. Add Product
+2. Get Product by ID
+3. Get All Products
+4. Update Product
+5. Delete Product
+6. Search Products by Category
+7. Search Products by Name
+8. Back to Main Menu
+Enter your choice: 1
+Enter product name: 8Y75
+Enter product category: 7
+Enter product price: 8786
+Enter product quantity: 7
+Product added successfully.
+
+
+
+
+*******IN PRODUCT-->1.ADD******
+********PRODUCT CATEGORY ACCEPTING ALPHABETS AND GOT SUCCESS*********
+Product Management
+1. Add Product
+2. Get Product by ID
+3. Get All Products
+4. Update Product
+5. Delete Product
+6. Search Products by Category
+7. Search Products by Name
+8. Back to Main Menu
+Enter your choice: 1
+Enter product name: HUGUYF
+Enter product category: HBG
+Enter product price: 87885
+Enter product quantity: 8
+Product added successfully.
+
+
+[*******IN PRODUCT-->ADD******
+********PRODUCT PRICE NOT ACCEPTING ALPHABETS AND GOT ERROR*********]
+
+
+[*******IN PRODUCT-->ADD******
+********PRODUCT QUANTITY NOT ACCEPTING ALPHABETS AND GOT ERROR*********]
+
+
+[*******IN PRODUCT-->2.GET Product by ID******
+********PRODUCT PRICE NOT ACCEPTING ALPHABETS AND GOT ERROR*********]
+
+
+[*******IN PRODUCT-->4. Update Product******
+********PRODUCT ID NOT ACCEPTING ALPHABETS AND GOT ERROR*********]
+
+[*******IN PRODUCT-->6. Search Products by Category****
+*****CATEGORY ACCEPTING ALPHABETS AND NO PRODUCT FOUND****
+Product Management
+1. Add Product
+2. Get Product by ID
+3. Get All Products
+4. Update Product
+5. Delete Product
+6. Search Products by Category
+7. Search Products by Name
+8. Back to Main Menu
+Enter your choice: 6
+Enter product category: GYG
+No products found in category GYG
+
+****7. Search Products by Name***
+*****ACCEPTING NUMBERS, NO PRODUCT FOUND******
+Product Management
+1. Add Product
+2. Get Product by ID
+3. Get All Products
+4. Update Product
+5. Delete Product
+6. Search Products by Category
+7. Search Products by Name
+8. Back to Main Menu
+Enter your choice: 7
+Enter product name: 8678
+No products found with name containing 8678]]
+
+
+
+*******IN CUSTOMER-->1. Add Customer****
+******CUSTOMER NAM ACCEPTING NUMBERS*****
+Customer Management
+1. Add Customer
+2. Get Customer by ID
+3. Get All Customers
+4. Update Customer
+5. Delete Customer
+6. Back to Main Menu
+Enter your choice: 1
+Enter customer name: 87665
+Enter customer phone: 6756
+Customer added successfully.
+
+
+
+
+**********IN CUSTOMERS--->ADD CUSTOMER**********
+**********PHONE NUMBER TAKING UPTO 15 NUMBERS, IF EXCEEDED SHOWS ERROR*****
+Customer Management
+1. Add Customer
+2. Get Customer by ID
+3. Get All Customers
+4. Update Customer
+5. Delete Customer
+6. Back to Main Menu
+Enter your choice: 1
+Enter customer name: 655
+Enter customer phone: 876545678765
+Customer added successfully.
+
+
+
+******SEE THE NAME AND NUMBER********
+Customer Management-->1.ADD CUSTOMER****
+1. Add Customer
+2. Get Customer by ID
+3. Get All Customers
+4. Update Customer
+5. Delete Customer
+6. Back to Main Menu
+Enter your choice: 1
+Enter customer name: 765
+Enter customer phone: ngyf
+Customer added successfully.
+
+
+
+[*******IN CUSTOMER-->1. Add Customer****
+******CUSTOMER ID ACCEPTING ALPHABETS, SHOWING ERROR*****]
+
+
+
+[*******IN CUSTOMER-->4. Update Customer****
+******CUSTOMER ID ACCEPTING ALPHABETS, SHOWING ERROR*****]
+
+
+[*******IN CUSTOMER-->5. Delete  Customer****
+******CUSTOMER ID ACCEPTING ALPHABETS, SHOWING ERROR*****]
+
+
+
+
+
+
+*******IN CUSTOMER-->5. Delete  Customer****
+******CUSTOMER ID ACCEPTING NUMBER WHICH DOESN'T EXIST,SHOWING-->Customer deleted successfully. *****
+Customer Management
+1. Add Customer
+2. Get Customer by ID
+3. Get All Customers
+4. Update Customer
+5. Delete Customer
+6. Back to Main Menu
+Enter your choice: 5
+Enter customer ID: 100
+Customer deleted successfully.
+
+
+[*******IN SALES-->ADD******
+********CUSTOMER ID NOT ACCEPTING ALPHABETS AND GOT ERROR*********]
+
+
+
+**IN SALES-->UPDATE***
+******WRONG PRODUCT ID, CUSTOMER ID*****
+Sales Management
+1. Add Sale
+2. Get Sale by ID
+3. Get All Sales
+4. Update Sale
+5. Delete Sale
+6. Back to Main Menu
+Enter your choice: 4
+Enter sale ID: 1
+Enter new customer ID: 5
+Enter new product ID: 1
+Enter new quantity: 2025-05-20
+Traceback (most recent call last):
+  File "C:\Users\siliveru.ruchitha\Desktop\Inventory\main.py", line 257, in <module>
+    if __name__ == '__main__':
+  File "C:\Users\siliveru.ruchitha\Desktop\Inventory\main.py", line 243, in main
+    elif choice == '3':
+  File "C:\Users\siliveru.ruchitha\Desktop\Inventory\main.py", line 193, in manage_sales
+    product_id = int(input("Enter new product ID: "))
+ValueError: invalid literal for int() with base 10: '2025-05-20'
+
+
+
+
+**IN SALES-->UPDATE***
+******WRONG CUSTOMER ID*****
+Sales Management
+1. Add Sale
+2. Get Sale by ID
+3. Get All Sales
+4. Update Sale
+5. Delete Sale
+6. Back to Main Menu
+Enter your choice: 4
+Enter sale ID: 10
+Enter new customer ID: 5
+Enter new product ID: 2
+Enter new quantity: 2025-05-20
+Traceback (most recent call last):
+  File "C:\Users\siliveru.ruchitha\Desktop\Inventory\main.py", line 262, in <module>
+    main()
+  File "C:\Users\siliveru.ruchitha\Desktop\Inventory\main.py", line 248, in main
+    manage_sales()
+  File "C:\Users\siliveru.ruchitha\Desktop\Inventory\main.py", line 195, in manage_sales
+    quantity = int(input("Enter new quantity: "))
+ValueError: invalid literal for int() with base 10: '2025-05-20'
+
+
+
+**********AFTER ENTERING WRONG SALES ID**********
+********GOT DELETED SUCCESSFULLY*****
+Sales Management
+1. Add Sale
+2. Get Sale by ID
+3. Get All Sales
+4. Update Sale
+5. Delete Sale
+6. Back to Main Menu
+Enter your choice: 5
+Enter sale ID: 10
+Sale deleted successfully.
+
+
+
+
+
+
+
+
+
+
+
+
